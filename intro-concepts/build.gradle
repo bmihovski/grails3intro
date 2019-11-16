@@ -24,16 +24,16 @@ apply plugin:"com.bertramlabs.asset-pipeline"
 repositories {
     maven { url "https://repo.grails.org/grails/core" }
 }
-
+/* devtools not working
 configurations {
     developmentOnly
     runtimeClasspath {
         extendsFrom developmentOnly
     }
 }
-
+*/
 dependencies {
-    developmentOnly("org.springframework.boot:spring-boot-devtools")
+    //developmentOnly("org.springframework.boot:spring-boot-devtools")
     compile "org.springframework.boot:spring-boot-starter-logging"
     compile "org.springframework.boot:spring-boot-autoconfigure"
     compile "org.grails:grails-core"

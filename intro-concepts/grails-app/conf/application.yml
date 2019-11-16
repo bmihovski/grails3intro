@@ -87,10 +87,10 @@ grails:
                 taglib: none
                 staticparts: none
 management:
-    endpoints:
-        jmx:
-            unique-names: true
 
+spring:
+    jmx:
+        unique-names: true
 ---
 hibernate:
     cache:
