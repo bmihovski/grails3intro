@@ -1,3 +1,3 @@
  <g:each in="${books}" var="book">
-        <book:price price="${book.price}"/>
+        <book:display book="${book}"/>
  </g:each>

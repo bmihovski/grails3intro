@@ -1,7 +1,7 @@
 package intro.concepts
 
 class BookTagLib {
-    static defaultEncodeAs = [taglib:'html']
+    static defaultEncodeAs = [taglib:'none']
     //static encodeAsForTags = [tagName: [taglib:'html'], otherTagName: [taglib:'none']]
     static namespace = "book"
     /**
@@ -17,6 +17,6 @@ class BookTagLib {
     }
 
     def display = { attrs ->
-        out << render(template: "/common/bookTagLib")
+        out << render(template: "/common/bookTagLib", model: [book: attrs.book])
     }
 }
