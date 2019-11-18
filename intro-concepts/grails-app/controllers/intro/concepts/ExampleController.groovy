@@ -18,4 +18,12 @@ class ExampleController {
         }
     }
 
+    def tagLibs() {
+        def bookList = [ books: [
+                [id: 1, title: "Groovy in Action", price: 29_99],
+                [id: 2, title: "Java 8 in Action", price: 24_99]
+        ]]
+        respond bookList
+    }
+
 }
