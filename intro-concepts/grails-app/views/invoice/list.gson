@@ -1,0 +1,7 @@
+import intro.concepts.Invoice
+
+model {
+    List<Invoice> invoices = []
+}
+
+json tmpl.invoice(invoices)

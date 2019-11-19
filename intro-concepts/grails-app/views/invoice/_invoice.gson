@@ -1,0 +1,12 @@
+import intro.concepts.*
+
+model {
+    Invoice invoice
+}
+
+json {
+    id invoice.id
+    name invoice?.name ?: ''
+    items tmpl.item(invoice?.items)
+    total invoice?.total ?: 0
+}
