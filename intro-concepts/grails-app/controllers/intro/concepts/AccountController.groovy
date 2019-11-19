@@ -1,12 +1,12 @@
 package intro.concepts
 
-import javax.transaction.Transactional
+import grails.gorm.transactions.Transactional
 
 class AccountController {
 
     def accountService
 
-    @Transactional(readOnly=true)
+    @Transactional(readOnly = true)
     def index() {
         render Account.list()
     }
