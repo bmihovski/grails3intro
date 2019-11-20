@@ -57,6 +57,7 @@ dependencies {
     compile "org.hibernate:hibernate-core:5.4.0.Final"
     compile "org.grails.plugins:gsp"
     compile "org.grails.plugins:views-json:2.0.0.RC2"
+    compile 'org.grails:grails-datastore-rest-client:6.1.12.RELEASE'
     compileOnly "io.micronaut:micronaut-inject-groovy"
     console "org.grails:grails-console"
     profile "org.grails.profiles:web"

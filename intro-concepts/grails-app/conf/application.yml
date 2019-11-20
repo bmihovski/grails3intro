@@ -135,3 +135,12 @@ environments:
                 testOnReturn: false
                 jdbcInterceptors: ConnectionState
                 defaultTransactionIsolation: 2 # TRANSACTION_READ_COMMITTED
+
+---
+reactor:
+    dispatchers:
+        default: myExecutor
+        myExecutor:
+            type: workQueue
+            size: 5
+            backlog: 2048
